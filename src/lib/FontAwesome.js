@@ -5,7 +5,8 @@ import {
   faChevronRight,
   faChevronDown,
   faPaperclip,
-  faCircleNotch
+  faCircleNotch,
+  faUser,
 } from '@fortawesome/free-solid-svg-icons'
 
 // add required icons here
@@ -13,3 +14,4 @@ library.add(faChevronRight)
 library.add(faChevronDown)
 library.add(faPaperclip)
 library.add(faCircleNotch)
+library.add(faUser)

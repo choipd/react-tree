@@ -21,10 +21,10 @@ type Props = {
 const LeafElement = (props: Props) => {
   const { data, level, onSelect, currentTheme, selected } = props
   return (
-    <Element selected={selected && selected.id === data.id } currentTheme={currentTheme} onClick={() => onSelect(props.data)}>
+    <Element selected={selected && selected.id === data.id} currentTheme={currentTheme} onClick={() => onSelect(props.data)}>
       <Wrapper level={level + 1}>
         <Icon currentTheme={currentTheme}>
-          <FontAwesomeIcon icon="paperclip" />
+          <FontAwesomeIcon icon="user" />
         </Icon>
         <NodeText>{data.label}</NodeText>
       </Wrapper>
@@ -40,7 +40,7 @@ LeafElement.defaultProps = {
   },
   level: 0,
   currentTheme: 'dark',
-  onSelect: () => {},
+  onSelect: () => { },
   selected: null
 }
 
